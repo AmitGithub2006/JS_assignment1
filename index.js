@@ -21,11 +21,24 @@
 
 //Ques3:-Write a program to read the first and last digit of a number.
 
-let num = parseInt(process.argv[2]);
-let firstDigit = num;
-while (firstDigit >= 10) {
-  firstDigit = parseInt(firstDigit / 10);
-}
-lastDigit = num % 10;
+// let num = parseInt(process.argv[2]);
+// let firstDigit = num;
+// while (firstDigit >= 10) {
+//   firstDigit = parseInt(firstDigit / 10);
+// }
+// lastDigit = num % 10;
 
-console.log(firstDigit + "," + lastDigit);
+// console.log(firstDigit + "," + lastDigit);
+
+//Ques4:-Check whether the given number is an armstrong number or not.
+
+let num = parseInt(process.argv[2]);
+firstDigit = Math.floor(num / 100);
+midDigit = Math.floor(num / 10) % 10;
+lastDigit = num % 10;
+sum = Math.pow(firstDigit, 3) + Math.pow(midDigit, 3) + Math.pow(lastDigit, 3);
+if (sum == num) {
+  console.log("It is a armstrong number");
+} else {
+  console.log("It is not a armstrong number");
+}
