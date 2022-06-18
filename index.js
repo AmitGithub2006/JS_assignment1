@@ -32,13 +32,35 @@
 
 //Ques4:-Check whether the given number is an armstrong number or not.
 
+// let num = parseInt(process.argv[2]);
+// firstDigit = Math.floor(num / 100);
+// midDigit = Math.floor(num / 10) % 10;
+// lastDigit = num % 10;
+// sum = Math.pow(firstDigit, 3) + Math.pow(midDigit, 3) + Math.pow(lastDigit, 3);
+// if (sum == num) {
+//   console.log("It is a armstrong number");
+// } else {
+//   console.log("It is not a armstrong number");
+// }
+
+//Ques5:-Take two numbers and find product of all numbers between them that satisfy following condition (inclusive range):
+// Condition 1 - Second last digit of number is 4
+// Condition 2 - Numbers should be even
+
+//Ques6:-Take a number and return all the even digits of the number.
+
+//Ques7:-Check whether the given number is equal to its reverse number or not.
+
 let num = parseInt(process.argv[2]);
-firstDigit = Math.floor(num / 100);
-midDigit = Math.floor(num / 10) % 10;
-lastDigit = num % 10;
-sum = Math.pow(firstDigit, 3) + Math.pow(midDigit, 3) + Math.pow(lastDigit, 3);
-if (sum == num) {
-  console.log("It is a armstrong number");
+let rev = 0;
+let temp = num;
+while (temp > 0) {
+  last = temp % 10;
+  rev = rev * 10 + last;
+  temp = parseInt(temp / 10);
+}
+if (rev == num) {
+  console.log("This number is equal to its reverse number");
 } else {
-  console.log("It is not a armstrong number");
+  console.log("This number is not equal to its reverse number");
 }
