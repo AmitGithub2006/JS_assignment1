@@ -47,20 +47,47 @@
 // Condition 1 - Second last digit of number is 4
 // Condition 2 - Numbers should be even
 
+// let num1 = parseInt(process.argv[2]);
+// let num2 = parseInt(process.argv[3]);
+// let pro = 1;
+// while (num1 >= 42 && num2 > num1) {
+//   if (
+//     num1 % 2 == 0 &&
+//     num2 % 2 == 0 &&
+//     parseInt(num1 / 10) % 10 == 4 &&
+//     parseInt(num2 / 10) % 10 == 4
+//   ) {
+//     // num1 <= num2;
+//     pro = pro * num1;
+//   }
+//   console.log(pro);
+// }
+
 //Ques6:-Take a number and return all the even digits of the number.
 
-//Ques7:-Check whether the given number is equal to its reverse number or not.
-
 let num = parseInt(process.argv[2]);
-let rev = 0;
+let last = 0;
 let temp = num;
 while (temp > 0) {
   last = temp % 10;
-  rev = rev * 10 + last;
   temp = parseInt(temp / 10);
+  if (last % 2 == 0) {
+    console.log(last);
+  }
 }
-if (rev == num) {
-  console.log("This number is equal to its reverse number");
-} else {
-  console.log("This number is not equal to its reverse number");
-}
+
+//Ques7:-Check whether the given number is equal to its reverse number or not.
+
+// let num = parseInt(process.argv[2]);
+// let rev = 0;
+// let temp = num;
+// while (temp > 0) {
+//   last = temp % 10;
+//   rev = rev * 10 + last;
+//   temp = parseInt(temp / 10);
+// }
+// if (rev == num) {
+//   console.log("This number is equal to its reverse number");
+// } else {
+//   console.log("This number is not equal to its reverse number");
+// }

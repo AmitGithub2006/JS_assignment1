@@ -3,3 +3,4 @@
 <img src="thirdQues.png" alt="Third Ques Image" />
 <img src="fourthQues.png" alt="Fourth Ques Image" />
 <img src="seventhQues.png" alt="Seventh Ques Image" />
+<img src="sixthQues.png" alt="Sixth Ques Image" />
