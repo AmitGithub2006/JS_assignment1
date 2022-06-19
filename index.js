@@ -47,34 +47,33 @@
 // Condition 1 - Second last digit of number is 4
 // Condition 2 - Numbers should be even
 
-// let num1 = parseInt(process.argv[2]);
-// let num2 = parseInt(process.argv[3]);
-// let pro = 1;
-// while (num1 >= 42 && num2 > num1) {
-//   if (
-//     num1 % 2 == 0 &&
-//     num2 % 2 == 0 &&
-//     parseInt(num1 / 10) % 10 == 4 &&
-//     parseInt(num2 / 10) % 10 == 4
-//   ) {
-//     // num1 <= num2;
-//     pro = pro * num1;
-//   }
-//   console.log(pro);
-// }
+let a = parseInt(process.argv[2]);
+let b = parseInt(process.argv[3]);
+let pro = 1;
+for (let i = a; i <= b; i++) {
+  if (i % 2 == 0 && parseInt(i / 10) % 10 == 4) {
+    a >= 40;
+    pro = pro * i;
+}
+}
+if (pro < 1680) {
+  console.log("Condition is not satisfied");
+} else {
+  console.log(pro);
+}
 
 //Ques6:-Take a number and return all the even digits of the number.
 
-let num = parseInt(process.argv[2]);
-let last = 0;
-let temp = num;
-while (temp > 0) {
-  last = temp % 10;
-  temp = parseInt(temp / 10);
-  if (last % 2 == 0) {
-    console.log(last);
-  }
-}
+// let num = parseInt(process.argv[2]);
+// let last = 0;
+// let temp = num;
+// while (temp > 0) {
+//   last = temp % 10;
+//   temp = parseInt(temp / 10);
+//   if (last % 2 == 0) {
+//     console.log(last);
+//   }
+// }
 
 //Ques7:-Check whether the given number is equal to its reverse number or not.
 
