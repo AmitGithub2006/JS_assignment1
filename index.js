@@ -47,20 +47,20 @@
 // Condition 1 - Second last digit of number is 4
 // Condition 2 - Numbers should be even
 
-let a = parseInt(process.argv[2]);
-let b = parseInt(process.argv[3]);
-let pro = 1;
-for (let i = a; i <= b; i++) {
-  if (i % 2 == 0 && parseInt(i / 10) % 10 == 4) {
-    a >= 40;
-    pro = pro * i;
-}
-}
-if (pro < 1680) {
-  console.log("Condition is not satisfied");
-} else {
-  console.log(pro);
-}
+// let a = parseInt(process.argv[2]);
+// let b = parseInt(process.argv[3]);
+// let pro = 1;
+// for (let i = a; i <= b; i++) {
+//   if (i % 2 == 0 && parseInt(i / 10) % 10 == 4) {
+//     a >= 40;
+//     pro = pro * i;
+// }
+// }
+// if (pro < 1680) {
+//   console.log("Condition is not satisfied");
+// } else {
+//   console.log(pro);
+// }
 
 //Ques6:-Take a number and return all the even digits of the number.
 
